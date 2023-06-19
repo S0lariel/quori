@@ -7,24 +7,17 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <script scr="{{asset('javascripts/index.js')}} defer"></script>
         <script src="https://kit.fontawesome.com/b93e551c92.js" crossorigin="anonymous"></script>
-        {% block stylesheets %}
-        {% endblock %}
-
-        {% block javascripts %}
-        {% endblock %}
     </head>
     <body class="d-flex flex-column">
-        <header>Header</header>
+        {{include('partials/_header.html.twig')}}
         <div class="flex-fill d-flex flex-row-nowrap justify-content-center">
             <div class="content flex-fill d-flex flex-row-nowrap">
-                <div class="sidebar">
-                    Sidebar
-                </div>
+                {{include('partials/_sidebar.html.twig')}}
                 <div class="app-content flex-fill">
                     {% block body %}{% endblock %}
                 </div>
             </div>
         </div>
-        <footer>Footer</footer>
+        {{include('partials/_footer.html.twig')}}
     </body>
 </html>
