@@ -9,14 +9,18 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "symfony/asset": "6.3.*",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.3.*",
+        "symfony/maker-bundle": "^1.49",
         "symfony/runtime": "6.3.*",
-        "symfony/yaml": "6.3.*"
-    },
-    "require-dev": {
+        "symfony/twig-bundle": "6.3.*",
+        "symfony/yaml": "6.3.*",
+        "twig/extra-bundle": "^3.6",
+        "twig/intl-extra": "^3.6",
+        "twig/twig": "^2.12|^3.0"
     },
     "config": {
         "allow-plugins": {
@@ -47,7 +51,6 @@
     },
     "scripts": {
         "auto-scripts": {
-            "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
